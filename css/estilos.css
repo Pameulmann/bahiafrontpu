@@ -1,0 +1,14 @@
+body {background-image: url(../imagenes/fondolimas.jpg);
+background-attachment: fixed;}
+.titulokey {color: #E6DC30;
+background-color: #78AF5D; text-align: center; font-size: 60px;
+text-decoration: underline;}
+.textoalineado {text-align: justify;}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.imagenes
+  { border: 2px solid #78AF5D; border-radius: 10px;
+  width: 300px; height: 300px;}
+  .video {display: flex; justify-content: center; align-items: center;}
