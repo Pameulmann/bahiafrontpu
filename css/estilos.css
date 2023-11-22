@@ -6,6 +6,22 @@ body {
   background-color: white;
 }
 
+/* Propiedades header */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.textoalineado {
+  margin: 30px;
+  text-align: justify;
+}
+
+/* Propiedades de los titulos  */
 .titulokey {
   font-family: 'Amatic SC', sans-serif;
   max-width: 30%;
@@ -17,9 +33,43 @@ body {
   text-decoration: underline;
 }
 
-.textoalineado {
-  text-align: justify;
+li,
+ol,
+ul,
+p {
+  font-size: 20px;
 }
+
+.card-img-top {
+  width: 200px;
+  height: auto;
+}
+
+.row {
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+/* Propiedades main, section y aside */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Propiedades osvaldo */
+
+.osvaldo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+
 
 .contenedor {
   display: flex;
@@ -108,81 +158,50 @@ body {
   text-align: center;
 }
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
+
 
 .header-item {
   margin-right: 10px;
   flex-wrap: wrap;
 }
 
-.footer {
+
+
+/*   Propiedades Article arriba del footer    */
+article {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 80px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 .texto {
-  flex: 0 0 33.3%;
-  padding: 10px;
-  width: 33.3%;
-  text-align: right;
-  background-color: #80ed99;
+  width: 50%;
+  text-align: justify;
+  background-color: #80ed9982;
+}
+
+.box-texto {
+  width: 50%;
 }
 
 .mapsfooter {
-  width: 45%;
+  width: 50%;
   height: auto;
 }
 
-main {
+
+.footer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+  height: 15 vh;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 0.639);
 }
-
-.relleno {
-  width: 50%;
-  padding: 150px;
-}
-
-.masa {
-  width: 50%;
-  padding: 150px;
-}
-
-li,
-ol,
-ul,
-p {
-  font-size: 20px;
-}
-
-.card-img-top {
-  width: 200px;
-  height: auto;
-}
-
-.row {
-  margin-left: 10px;
-  margin-right: 10px;
-
-}
-
-article {
-  display: flex;
-  justify-content: space-between;
-}
-
-
 
 
 @media (max-width: 700px) {
