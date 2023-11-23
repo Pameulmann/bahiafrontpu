@@ -6,6 +6,22 @@ body {
   background-color: white;
 }
 
+/*Modo Oscuro*/
+.modo-oscuro {
+  background-image: none;
+  background-color: #000000;
+  color: white;
+  transition: all 0.7s;
+}
+
+.oscuro {
+  margin: 5vh;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+
 /* Propiedades header */
 header {
   display: flex;
@@ -195,12 +211,19 @@ article {
 .footer {
   display: flex;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 80px;
-  height: 15 vh;
+  height: 20vh;
   width: 100%;
-  background-color: rgba(250, 235, 215, 0.639);
+  background-color: rgba(250, 235, 215, 0.744);
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
 }
 
 

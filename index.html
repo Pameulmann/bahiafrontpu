@@ -8,51 +8,16 @@
   <meta name="keywords" content="keylimepie, recetas, pasteleria, osvaldogross">
   <meta name="author" content="pamelaulmann">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- </head>
+</head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/estilos.css">
 
 <body>
-  <script>
-    function mostrarAlertaBienvenida() {
-        alert("¡Bienvenid@ a nuestra página!");
-    }
-
-    window.onload = mostrarAlertaBienvenida;
-</script>
-
-<button onclick="cambiarEstilos()">Activar Modo Inclusivo</button>
-
-<script>
-    // Variable para rastrear el estado del modo inclusivo
-    let modoInclusivo = false;
-
-    // Función para cambiar los estilos según el modo inclusivo
-    function cambiarEstilos() {
-        const body = document.body;
-
-        if (modoInclusivo) {
-            // Desactivar modo inclusivo
-            body.style.color = '#333';
-            body.style.backgroundColor = '#fff';
-        } else {
-            // Activar modo inclusivo
-            body.style.color = '#fff';
-            body.style.backgroundColor = '#333';
-        }
-
-        // Invertir el estado del modo inclusivo
-        modoInclusivo = !modoInclusivo;
-    }
-</script>
-
- <header>
+  <header>
     <div class="logolasrecetas">
       <img src="./imagenes/logo_pamela.png.png" alt="Logo Pamela">
     </div>
-
     <div class="logo50x50">
       <img src="./imagenes/logorecetas50x50.png.png" alt="Logo50">
     </div>
@@ -72,6 +37,9 @@
       </a>
     </div>
   </header>
+  <div class="oscuro">
+    <button id="toggle">Modo Inclusivo</button>
+  </div>
   <br>
   <h3 class="textoalineado" r>Esta es una receta que se remonta a principios del siglo XX en el área de los Cayos del
     Oeste de Florida y fue inventada por el botánico Jack Simons. Actualmente es replicada en todo el mundo y en
@@ -233,22 +201,20 @@
   </article>
 
   <footer class="footer">
-    <div class="footer-item">
+    <button onclick="cartel()">Desarrollador</button>
+    <div class="footer-items">
       <a href="https://www.instagram.com/peim___u/" target="_blank">
         <img src="./imagenes/instagram.png" alt="Imagen Instagram" class="redes">
       </a>
-    </div>
-    <div class="footer-item">
+
       <a href="https://ar.linkedin.com/in/pamela-ulmann-9127332a/" target="_blank">
         <img src="./imagenes/linkedin.png" alt="Imagen Linkedin" class="redes">
       </a>
-    </div>
-    <div class="footer-item">
+
       <a href="https://www.facebook.com/profile.php?id=100090153018246" target="_blank">
         <img src="./imagenes/fblogo.png.png" alt="Imagen Facebook" class="redes">
       </a>
-    </div>
-    <div class="footer-item">
+
       <a href="https://www.youtube.com/channel/UCW5uu2YBj3sup0NxvmUblbw" target="_blank">
         <img src="./imagenes/ytlogo.png.png" alt="Imagen YouTube" class="redes">
       </a>
@@ -259,6 +225,14 @@
   <a href="https://api.whatsapp.com/send/?phone=5492915784649&text&type=phone_number&app_absent=0" target="_blank"
     class="whatsapp-button">
     <img class="redes" src="./imagenes/wa.png" alt="WhatsApp">
+    <script>
+      function mostrarAlertaBienvenida() {
+        alert("¡Bienvenid@ a nuestra página!");
+      }
+      window.onload = mostrarAlertaBienvenida;
+
+    </script>
+    <script src="./javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
